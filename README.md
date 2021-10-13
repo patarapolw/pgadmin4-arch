@@ -1,6 +1,6 @@
 ## pgadmin4-arch
 
-This is based on Debian Bullseye (11)'s deb and debtap
+This is based on Debian Bullseye (11)'s deb and [debtap](https://aur.archlinux.org/packages/debtap/)
 
 ## Installation
 
