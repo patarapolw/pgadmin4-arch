@@ -1,0 +1,11 @@
+install:
+  command: |
+    sudo mkdir -p /var/lib/pgadmin
+    sudo mkdir -p /var/log/pgadmin
+    sudo chown $USER /var/lib/pgadmin
+    sudo chown $USER /var/log/pgadmin
+    python -m venv .venv
+    .venv/bin/pip install pgadmin4
+start:
+  command: |
+    .venv/bin/pgadmin4
