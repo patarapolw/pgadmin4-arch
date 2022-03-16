@@ -6,6 +6,11 @@ install:
     sudo chown $USER /var/log/pgadmin
     python -m venv .venv
     .venv/bin/pip install pgadmin4
+    .venv/bin/pip install simple-websocket
+upgrade:
+  command: |
+    .venv/bin/pip install --upgrade pgadmin4
+    .venv/bin/pip install --upgrade simple-websocket
 start:
   command: |
     .venv/bin/pgadmin4
